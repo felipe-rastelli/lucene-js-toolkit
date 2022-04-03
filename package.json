@@ -1,0 +1,46 @@
+{
+  "name": "lucene-js-toolkit",
+  "version": "1.0.0",
+  "description": "A lucene query parser to build lucene queries from objects and parse objects from lucene queries",
+  "type": "module",
+  "scripts": {
+    "test": "test",
+    "build": "rm -rf dist && microbundle",
+    "dev": "microbundle watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http"
+  },
+  "keywords": [
+    "lucene",
+    "query",
+    "parser",
+    "toolkit",
+    "query-parser",
+    "lucene-query-parser",
+    "lucene-js",
+    "lucene-js-toolkit"
+  ],
+  "author": "Felipe Rastelli",
+  "license": "ISC",
+  "dependencies": {
+    "lodash-es": "^4.17.21",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.181",
+    "microbundle": "^0.14.2",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.3"
+  },
+  "source": "src/index.ts",
+  "main": "dist/index.cjs",
+  "umd:main": "dist/index.umd.js",
+  "module": "dist/index.m.js",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "types": "dist/index.d.ts"
+}
